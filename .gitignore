@@ -1,0 +1,21 @@
+# Your settings and logs stay on your laptop
+accounts.json
+logs/
+data/
+*.jsonl
+*.csv
+
+# Never commit credentials
+.env
+.env.*
+*.pem
+.aws/
+credentials
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/

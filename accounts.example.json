@@ -1,0 +1,16 @@
+{
+  "role_name": "SecurityAuditRole",
+  "external_id": null,
+  "region": "us-east-1",
+  "max_key_age_days": 90,
+  "warn_key_age_days": 75,
+  "active_window_days": 30,
+  "owner_tag_keys": ["Owner", "owner", "OwnerEmail", "Email", "email"],
+  "smtp_name_pattern": "smtp|ses",
+  "gmail_account": "you@yourcompany.com",
+  "email_signature": "Harneet\nSecurity Team",
+  "accounts": [
+    { "id": "111111111111", "name": "example-prod" },
+    { "id": "222222222222", "name": "example-dev" }
+  ]
+}

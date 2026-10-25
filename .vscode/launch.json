@@ -1,0 +1,53 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dashboard (read-only)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app.py"],
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "Dashboard (write actions ON)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app.py"],
+      "cwd": "${workspaceFolder}",
+      "env": { "ENABLE_WRITE_ACTIONS": "true" },
+      "justMyCode": true
+    },
+    {
+      "name": "Dashboard (Floci test mode)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app.py"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "AWS_ENDPOINT_URL": "http://localhost:4566",
+        "AWS_ACCESS_KEY_ID": "test",
+        "AWS_SECRET_ACCESS_KEY": "test",
+        "AWS_DEFAULT_REGION": "us-east-1",
+        "ENABLE_WRITE_ACTIONS": "true"
+      },
+      "justMyCode": true
+    },
+    {
+      "name": "Seed Floci with sample users",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "testing/floci/seed_floci.py",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "AWS_ENDPOINT_URL": "http://localhost:4566",
+        "AWS_ACCESS_KEY_ID": "test",
+        "AWS_SECRET_ACCESS_KEY": "test",
+        "AWS_DEFAULT_REGION": "us-east-1"
+      }
+    }
+  ]
+}

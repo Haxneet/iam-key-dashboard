@@ -1,0 +1,16 @@
+# Security settings for running locally.
+[server]
+# Only your own laptop can open the app. Nobody else on the network can reach it.
+address = "127.0.0.1"
+port = 8501
+enableXsrfProtection = true
+enableCORS = true
+runOnSave = false
+
+[browser]
+# Do not send usage statistics to Streamlit.
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[client]
+toolbarMode = "minimal"

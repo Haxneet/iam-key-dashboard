@@ -1,0 +1,8 @@
+# Local fake AWS for testing. Nothing here touches your real AWS accounts.
+# Start:  docker compose -f testing/floci/docker-compose.yml up -d
+services:
+  floci:
+    image: hectorvent/floci:latest
+    ports:
+      - "127.0.0.1:4566:4566"   # only reachable from your own laptop
+
