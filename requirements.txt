@@ -1,4 +1,4 @@
 # Version ranges keep you on patched releases without surprise major upgrades.
 streamlit>=1.40,<2.0  # needs 1.40+ for pop-up dialogs
 boto3>=1.35,<2.0
-pandas>=2.2,<4.0
+pandas>=3.1.0,<4.0
